@@ -1,9 +1,9 @@
 A first attempt to build a site.  
 
-#Hello World
+# Hello World
 
-##Section 1
+## Section 1
 
-##Section 2
+## Section 2
 
 
