@@ -1,7 +1,7 @@
 # Links to Posts
 
 ## Astrochemistry
-
+  We study the ro-vibrational structure of molecules with astrochemical significance.  The main thrust of this work is building reparametrized semi-empirical methods to define the vibrational potential energy surface.  
 ## Phase-Transfer Catalysis
 
 ### Physical Transfer
