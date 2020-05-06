@@ -1,1 +1,9 @@
+title: Layfield Laby
+email: jlayfield@stthomas.edu
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jolayfield.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: proflayfield 
+github_username:  jolayfield   
+tagline: A Research Blog
+author: Joshua Layfield 
 theme: jekyll-theme-slate
