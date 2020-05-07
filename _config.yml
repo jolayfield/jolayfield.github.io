@@ -7,3 +7,7 @@ github_username:  jolayfield
 tagline: A Research Blog
 author: Joshua Layfield 
 theme: jekyll-theme-slate
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
