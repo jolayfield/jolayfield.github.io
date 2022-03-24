@@ -6,7 +6,7 @@ twitter_username: proflayfield
 github_username:  jolayfield   
 tagline: A Research Blog
 author: Joshua Layfield 
-theme: jekyll-theme-slate
+theme: jekyll-theme-leap-day
 # Build settings
 theme: minima
 plugins:
