@@ -4,4 +4,4 @@ title: About
 ---
 # About page
 
-This page tells you a little bit about me.
+This is a repository of SOPs for the Layfield lab at the Univesity of Saint Thomas. 
