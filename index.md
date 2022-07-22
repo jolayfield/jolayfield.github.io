@@ -7,3 +7,6 @@ title: Home
 ---
  
 A repository of procedures for my lab. 
+
+
+What is going on? 
