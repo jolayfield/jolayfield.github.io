@@ -3,6 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Third
+title: Vermicompost
 ---
-This is a third page.
+This page will contain personal posts about my journey with vermicomposting. 
