@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Token-Burn Dashboard Mockup | Joshua Layfield</title>
+    <meta name="description" content="Safe mockup of the Token-Burn Dashboard artifact with dummy data.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,650&family=Source+Sans+3:wght@400;500;650;750&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/site.css?v=20260617-dashboard-mockups-2">
+  </head>
+  <body>
+    <div class="site-shell mockup-shell">
+      <header class="topbar">
+        <a class="mark" href="../index.html">Joshua Layfield</a>
+        <nav aria-label="Mockup navigation">
+          <a href="../personal.html">Personal</a>
+          <a href="../artifact.html?id=token-burn-dashboard">Details</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="token-dashboard-mock" aria-label="Token-Burn Dashboard safe mockup">
+          <div class="token-page">
+            <header class="token-hero">
+              <div>
+                <p class="token-label">Safe mockup</p>
+                <h1>AI usage by day, source, and work driver.</h1>
+                <p class="token-lead">
+                  Synthetic burn data showing the dashboard shape: exact CLI totals stay separate from
+                  estimates, cache can be toggled in, and every spike has a fake work driver.
+                </p>
+              </div>
+              <div class="token-controls">
+                <div class="token-range" aria-label="Time range">
+                  <button>7d</button>
+                  <button aria-pressed="true">30d</button>
+                  <button>90d</button>
+                  <button>All</button>
+                </div>
+                <div class="token-range token-mode" aria-label="Token basis">
+                  <button aria-pressed="true">New work</button>
+                  <button>Incl. cache</button>
+                </div>
+                <p>Cache-read tokens are hidden in this view so the trend tracks net new work.</p>
+              </div>
+            </header>
+
+            <section class="token-stats" aria-label="Token usage metrics">
+              <article>
+                <span>Total burn</span>
+                <strong>24.6M</strong>
+                <p>30 synthetic days</p>
+              </article>
+              <article>
+                <span>Peak day</span>
+                <strong>4.8M</strong>
+                <p>Launch polish</p>
+              </article>
+              <article>
+                <span>7d average</span>
+                <strong>1.2M</strong>
+                <p>+18% vs prior week</p>
+              </article>
+              <article>
+                <span>Active days</span>
+                <strong>27</strong>
+                <p>3 quiet days</p>
+              </article>
+            </section>
+
+            <div class="token-grid">
+              <article class="token-panel">
+                <div class="token-panel-head">
+                  <div>
+                    <p>Daily burn</p>
+                    <h2>Heatmap</h2>
+                  </div>
+                  <span>30 fake rows</span>
+                </div>
+                <div class="token-heatmap" aria-hidden="true">
+                  <i class="heat0"></i><i class="heat1"></i><i class="heat2"></i><i class="heat0"></i><i class="heat3"></i><i class="heat1"></i><i class="heat0"></i><i class="heat2"></i><i class="heat4"></i><i class="heat3"></i>
+                  <i class="heat1"></i><i class="heat0"></i><i class="heat2"></i><i class="heat5"></i><i class="heat2"></i><i class="heat1"></i><i class="heat3"></i><i class="heat4"></i><i class="heat1"></i><i class="heat0"></i>
+                  <i class="heat2"></i><i class="heat3"></i><i class="heat1"></i><i class="heat5"></i><i class="heat4"></i><i class="heat2"></i><i class="heat1"></i><i class="heat0"></i><i class="heat3"></i><i class="heat2"></i>
+                </div>
+                <div class="token-legend">
+                  <span>less</span><i class="heat0"></i><i class="heat2"></i><i class="heat3"></i><i class="heat4"></i><i class="heat5"></i><span>more</span>
+                </div>
+              </article>
+
+              <article class="token-panel">
+                <div class="token-panel-head">
+                  <div>
+                    <p>Weekly trend</p>
+                    <h2>Log-scaled trend</h2>
+                  </div>
+                  <span>4 weeks</span>
+                </div>
+                <div class="token-trend">
+                  <svg viewBox="0 0 760 300" role="img" aria-label="Synthetic weekly token trend">
+                    <line x1="70" y1="248" x2="744" y2="248"></line>
+                    <line x1="70" y1="170" x2="744" y2="170"></line>
+                    <line x1="70" y1="92" x2="744" y2="92"></line>
+                    <text x="18" y="96">10M</text>
+                    <text x="24" y="174">1M</text>
+                    <text x="30" y="252">100K</text>
+                    <path d="M70 232 L294 184 L519 132 L744 70"></path>
+                    <circle cx="70" cy="232" r="6"></circle>
+                    <circle cx="294" cy="184" r="6"></circle>
+                    <circle cx="519" cy="132" r="6"></circle>
+                    <circle cx="744" cy="70" r="6"></circle>
+                    <text x="66" y="286">5/25</text>
+                    <text x="290" y="286">6/1</text>
+                    <text x="515" y="286">6/8</text>
+                    <text x="718" y="286">6/15</text>
+                  </svg>
+                </div>
+              </article>
+
+              <article class="token-panel">
+                <div class="token-panel-head">
+                  <div>
+                    <p>Source split</p>
+                    <h2>Exact beside estimated</h2>
+                  </div>
+                  <span>No blending</span>
+                </div>
+                <div class="token-source-grid">
+                  <article><span class="exact">Exact</span><strong>11.8M</strong><p>Codex CLI</p></article>
+                  <article><span class="exact">Exact</span><strong>8.7M</strong><p>Claude Code</p></article>
+                  <article><span class="estimated">Estimated</span><strong>2.9M</strong><p>Claude chat</p></article>
+                  <article><span class="estimated">Estimated</span><strong>1.2M</strong><p>ChatGPT</p></article>
+                </div>
+              </article>
+
+              <article class="token-panel">
+                <div class="token-panel-head">
+                  <div>
+                    <p>Drivers</p>
+                    <h2>What is burning tokens</h2>
+                  </div>
+                  <span>Ranked</span>
+                </div>
+                <div class="token-drivers">
+                  <div><span>Shipping</span><i><b style="width: 54%"></b></i><em>54%</em></div>
+                  <div><span>Debugging</span><i><b style="width: 21%"></b></i><em>21%</em></div>
+                  <div><span>Research</span><i><b style="width: 16%"></b></i><em>16%</em></div>
+                  <div><span>Admin</span><i><b style="width: 9%"></b></i><em>9%</em></div>
+                </div>
+              </article>
+
+              <article class="token-panel">
+                <div class="token-panel-head">
+                  <div>
+                    <p>Scale equivalents</p>
+                    <h2>Readable magnitude</h2>
+                  </div>
+                  <span>Approximate</span>
+                </div>
+                <div class="token-equivalents">
+                  <article><strong>18.5M</strong><span>words</span></article>
+                  <article><strong>61</strong><span>novels</span></article>
+                  <article><strong>925</strong><span>pages</span></article>
+                </div>
+              </article>
+
+              <article class="token-panel">
+                <div class="token-panel-head">
+                  <div>
+                    <p>Peak day</p>
+                    <h2>June 14</h2>
+                  </div>
+                  <span>4.8M tokens</span>
+                </div>
+                <div class="token-peak">
+                  <strong>Launch polish</strong>
+                  <p>Most of the synthetic spike comes from browser QA loops, copy revisions, and one long refactor.</p>
+                </div>
+              </article>
+
+              <article class="token-panel token-table-panel">
+                <div class="token-panel-head">
+                  <div>
+                    <p>Moving-average table</p>
+                    <h2>Last 30 days</h2>
+                  </div>
+                  <span>Sample rows</span>
+                </div>
+                <div class="token-table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Total</th>
+                        <th>7d avg</th>
+                        <th>Codex exact</th>
+                        <th>Claude exact</th>
+                        <th>Driver</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td><strong>2026-06-17</strong></td><td>1.4M</td><td>1.2M</td><td>720K</td><td>410K</td><td>Shipping</td></tr>
+                      <tr><td><strong>2026-06-16</strong></td><td>980K</td><td>1.1M</td><td>510K</td><td>290K</td><td>Research</td></tr>
+                      <tr><td><strong>2026-06-15</strong></td><td>1.8M</td><td>1.0M</td><td>1.1M</td><td>520K</td><td>Debugging</td></tr>
+                      <tr><td><strong>2026-06-14</strong></td><td>4.8M</td><td>1.3M</td><td>2.6M</td><td>1.7M</td><td>Launch polish</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

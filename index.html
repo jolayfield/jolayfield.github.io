@@ -13,12 +13,8 @@
   <body>
     <div class="site-shell">
       <header class="topbar">
-        <a class="mark" href="#top">Joshua Layfield</a>
-        <nav aria-label="Primary navigation">
-          <a href="#artifacts">Artifacts</a>
-          <a href="#process">Process</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <a class="mark" href="index.html">Joshua Layfield</a>
+        <nav aria-label="Primary navigation" data-nav></nav>
       </header>
 
       <main id="top">
@@ -26,7 +22,7 @@
           <div class="hero-inner">
             <p class="eyebrow">AI artifacts from Open Brain</p>
             <h1 id="hero-title">A catalog of useful things built with AI.</h1>
-            <p class="hero-copy">This site collects working artifacts, what they do, what they produce, and the process behind them. Each card is sourced from Open Brain notes so the portfolio can grow as new artifacts are captured.</p>
+            <p class="hero-copy">Public artifacts link directly to their site or repository. Private and local artifacts open detail pages or safe mockups that show the structure without exposing local files or protected data.</p>
             <div class="hero-actions">
               <a class="button" href="#artifacts">View artifact cards</a>
               <a class="button secondary" href="https://github.com/jolayfield">GitHub profile</a>
@@ -36,24 +32,17 @@
 
         <section class="section" aria-label="Artifact summary">
           <div class="section-inner">
-            <div class="metrics">
-              <div class="metric">
-                <strong>3</strong>
-                <span>AI artifacts</span>
-              </div>
-              <div class="metric">
-                <strong>1</strong>
-                <span>Published course site</span>
-              </div>
-              <div class="metric">
-                <strong>1</strong>
-                <span>Workflow automation</span>
-              </div>
-              <div class="metric">
-                <strong>1</strong>
-                <span>Research software package</span>
-              </div>
+            <div class="metrics" data-metrics></div>
+          </div>
+        </section>
+
+        <section class="section compact-section" aria-labelledby="category-title">
+          <div class="section-inner">
+            <div class="section-heading">
+              <h2 id="category-title">Browse By Category</h2>
+              <p>Each category opens a focused subpage for teaching, research, administrative, or personal artifacts.</p>
             </div>
+            <div class="category-grid" data-category-tiles></div>
           </div>
         </section>
 
@@ -61,160 +50,9 @@
           <div class="section-inner">
             <div class="section-heading">
               <h2>Artifact Cards</h2>
-              <p>Each card describes the artifact, the problem it addresses, the process used to build or run it, and the visible output.</p>
+              <p>Each card routes to a public artifact, public repository, private detail page, or safe dashboard mockup.</p>
             </div>
-
-            <div class="project-grid artifact-grid">
-              <article class="project-card artifact-card">
-                <div class="project-meta">
-                  <span class="pill">Administrative workflow automation</span>
-                  <span class="pill">Built and used</span>
-                  <span class="pill">Private repository</span>
-                </div>
-
-                <div>
-                  <h3>Transfer Credit Review Tool</h3>
-                  <p>An AI-built review pipeline for departmental transfer-credit evaluation. The tool turns an annual transfer review export into structured, scored, faculty-reviewable materials and a registrar-ready output.</p>
-                </div>
-
-                <section class="card-section">
-                  <h4>Problem</h4>
-                  <p>Transfer-credit review requires departments to compare external course records against local catalog expectations, collect faculty input, preserve decisions, and return clean records for registrar processing.</p>
-                </section>
-
-                <section class="card-section">
-                  <h4>Artifact Includes</h4>
-                  <ul class="process-list compact-list">
-                    <li>Transfer-credit review skill</li>
-                    <li>Parsed and deduplicated course records</li>
-                    <li>Formatted department review workbook</li>
-                    <li>Faculty reviewer Word documents</li>
-                    <li>Annotation-tracked review workbook</li>
-                    <li>Registrar-ready export</li>
-                  </ul>
-                </section>
-
-                <section class="card-section">
-                  <h4>Process</h4>
-                  <ul class="process-list compact-list">
-                    <li>Filter records by UST subject code.</li>
-                    <li>Deduplicate to unique course and institution pairs.</li>
-                    <li>Gather course descriptions, catalog links, and syllabus links.</li>
-                    <li>Score candidate matches against the UST course catalog with TF-IDF cosine similarity.</li>
-                    <li>Generate reviewer materials and extract annotations back into the workbook.</li>
-                    <li>Produce a registrar-ready export without publishing private review decisions.</li>
-                  </ul>
-                </section>
-
-                <section class="card-section result-section">
-                  <h4>Result</h4>
-                  <p>Used for the 2026 Chemistry transfer-credit review with 109 reviewed courses after 5 were held for additional review.</p>
-                </section>
-
-                <div class="project-actions">
-                  <span class="text-link static-link">Private GitHub repository</span>
-                </div>
-              </article>
-
-              <article class="project-card artifact-card">
-                <div class="project-meta">
-                  <span class="pill">Course website</span>
-                  <span class="pill">Published</span>
-                  <span class="pill">Public website</span>
-                </div>
-
-                <div>
-                  <h3>CHEM 332 Website</h3>
-                  <p>An AI-built course website artifact for CHEM 332 that turns course content into a web-first learning surface.</p>
-                </div>
-
-                <section class="card-section">
-                  <h4>Problem</h4>
-                  <p>Course materials are easier to use when students can navigate them as a public website rather than as a loose collection of files.</p>
-                </section>
-
-                <section class="card-section">
-                  <h4>Artifact Includes</h4>
-                  <ul class="process-list compact-list">
-                    <li>Public GitHub Pages site</li>
-                    <li>Course content pages</li>
-                    <li>Source-controlled teaching material</li>
-                    <li>Lightweight publishing workflow</li>
-                  </ul>
-                </section>
-
-                <section class="card-section">
-                  <h4>Process</h4>
-                  <ul class="process-list compact-list">
-                    <li>Organize course content for web navigation.</li>
-                    <li>Keep source files in GitHub for version control.</li>
-                    <li>Publish the artifact through GitHub Pages.</li>
-                    <li>Iterate as course needs change.</li>
-                  </ul>
-                </section>
-
-                <section class="card-section result-section">
-                  <h4>Result</h4>
-                  <p>Published as a public CHEM 332 demo site.</p>
-                </section>
-
-                <div class="project-actions">
-                  <a class="text-link" href="https://jolayfield.github.io/CHEM332-content/">Open website</a>
-                  <a class="text-link" href="https://github.com/jolayfield/CHEM332-content">Source repository</a>
-                </div>
-              </article>
-
-              <article class="project-card artifact-card">
-                <div class="project-meta">
-                  <span class="pill">Research software</span>
-                  <span class="pill">Active</span>
-                  <span class="pill">Public repository and documentation</span>
-                </div>
-
-                <div>
-                  <h3>Biochar Simulator</h3>
-                  <p>An AI-built Python package for generating model biochar surfaces for molecular dynamics simulations and visualization.</p>
-                </div>
-
-                <section class="card-section">
-                  <h4>Problem</h4>
-                  <p>Building plausible biochar structures by hand is difficult, tedious, and error-prone, especially when researchers need structures that reflect production conditions or selected material properties.</p>
-                </section>
-
-                <section class="card-section">
-                  <h4>Artifact Includes</h4>
-                  <ul class="process-list compact-list">
-                    <li>Python package named biochar</li>
-                    <li>Conda-forge install path</li>
-                    <li>Generated molecular biochar structures</li>
-                    <li>GROMACS-style simulation files</li>
-                    <li>Structure statistics and property summaries</li>
-                    <li>Sphinx documentation on Read the Docs</li>
-                  </ul>
-                </section>
-
-                <section class="card-section">
-                  <h4>Process</h4>
-                  <ul class="process-list compact-list">
-                    <li>Accept temperature/feedstock dependence or user-selected structural properties.</li>
-                    <li>Generate biochar surfaces with configurable size, aromaticity, and heteroatom content.</li>
-                    <li>Determine charges from the selected force field or a QM calculation.</li>
-                    <li>Use RDKit and supporting Python libraries to build inspectable molecular structures.</li>
-                    <li>Publish source, documentation, and installation instructions for reuse.</li>
-                  </ul>
-                </section>
-
-                <section class="card-section result-section">
-                  <h4>Result</h4>
-                  <p>Actively maintained research software used in Josh's biochar and PFAS-related computational chemistry work.</p>
-                </section>
-
-                <div class="project-actions">
-                  <a class="text-link" href="https://github.com/jolayfield/biochar-simulator">Source repository</a>
-                  <a class="text-link" href="https://biochar-simulator.readthedocs.io/en/latest/">Documentation</a>
-                </div>
-              </article>
-            </div>
+            <div class="project-grid artifact-grid" data-artifact-grid></div>
           </div>
         </section>
 
@@ -222,29 +60,29 @@
           <div class="section-inner">
             <div class="section-heading">
               <h2>Portfolio Process</h2>
-              <p>The website is designed to be updated from Open Brain captures as additional AI artifacts are built.</p>
+              <p>The website is designed to publish useful artifacts without exposing local paths, private review data, or protected operational files.</p>
             </div>
 
             <div class="artifact-layout">
               <div class="artifact-stage" aria-hidden="true">
                 <div class="artifact-window">
-                  <h3>Capture, structure, publish.</h3>
-                  <p>Open Brain holds the artifact memory. This site turns those notes into public-facing cards with only the details appropriate for a personal website.</p>
+                  <h3>Verify, categorize, publish.</h3>
+                  <p>Evidence stays in the source review process. The public site shows only safe descriptions, external links, mockups, and internal detail pages.</p>
                 </div>
               </div>
 
               <div class="artifact-list">
                 <article class="artifact-item">
-                  <h3>Capture</h3>
-                  <p>Store the artifact name, purpose, outputs, links, and constraints in Open Brain.</p>
+                  <h3>Verify</h3>
+                  <p>Use project files and git history to confirm claims before a card is added.</p>
                 </article>
                 <article class="artifact-item">
-                  <h3>Structure</h3>
-                  <p>Convert the capture into a compact card with problem, artifact, process, result, and links.</p>
+                  <h3>Categorize</h3>
+                  <p>Group artifacts as teaching, research, administrative, or personal so visitors can browse by purpose.</p>
                 </article>
                 <article class="artifact-item">
                   <h3>Publish</h3>
-                  <p>Keep private paths, protected data, and internal review decisions off the public site.</p>
+                  <p>Link public work directly and use detail pages or mockups for private local tools.</p>
                 </article>
               </div>
             </div>
@@ -261,7 +99,6 @@
               <div class="contact-list" aria-label="Contact links">
                 <a href="mailto:jlayfield@stthomas.edu">jlayfield@stthomas.edu</a>
                 <a href="https://github.com/jolayfield">GitHub</a>
-                <a href="https://twitter.com/proflayfield">Twitter / X</a>
               </div>
             </div>
           </div>
@@ -269,8 +106,11 @@
       </main>
 
       <footer>
-        <span>Built with GitHub Pages. Artifact list sourced from Open Brain captures.</span>
+        <span>Built with GitHub Pages. Public cards are generated from verified artifact metadata.</span>
       </footer>
     </div>
+    <script src="assets/js/artifacts.js?v=20260617-baseball-personal"></script>
+    <script src="assets/js/render.js"></script>
+    <script>renderHome();</script>
   </body>
 </html>
